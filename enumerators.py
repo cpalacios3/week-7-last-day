@@ -1,6 +1,12 @@
 def enum():
   # enumerate
   print("enumerate")
+
+  my_list = ['a', 'b', 'c']
+  for (index, item) in enumerate(my_list):
+    print(index, item)
+
+  
   # enumerate is a very useful function to use with for loops. Let's imagine the following situation:
   
   # index_count = 0
@@ -22,13 +28,14 @@ def enum():
   
   # Enumerator Practice #1
   # Print sentences like the following on the screen:
-  
-  # '{name} is found at index {index}'
+  '{name} is found at index {index}'
   
   # Where name must be each of the names in the list below, and the index, must be obtained via enumerate().
   
-  # list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
-  
+  list_names = ["Steven", "Jackie", "Donna", "Kelso", "Eric", "Fez", "Kitty", "Red"]
+  for (index, name) in enumerate(list_names):
+    print(f'{name} is found at index {index}')
+    
   # You can use the given print() line as an example and change its variable names, but the returned phrases must be the same!
   
   # Tip: use loops!
