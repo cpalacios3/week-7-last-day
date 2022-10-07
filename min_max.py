@@ -36,8 +36,8 @@ def min_max():
   # Store this value in a variable called minimum_age.
   
   # Also, get the name that comes last in alphabetical order, and store it in a variable called last_name.
-  minimum_age = min(dictionary_ages)
-  last_name = 
+  minimum_age = min(dictionary_ages.values())
+  last_name = max(dictionary_ages.keys())
   print(last_name)
   print(minimum_age)
 
